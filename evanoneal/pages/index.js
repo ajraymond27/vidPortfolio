@@ -1,4 +1,5 @@
 import React from 'react';
+import { useRouter } from 'next/router'
 import ReactPlayer from 'react-player'
 
 import Header from '../components/Header';
@@ -27,14 +28,41 @@ const Home = () => (
   <div className="page"> 
     <h1>Latest</h1>
     <Scroller />
+    <button><Link href="/work">View All Work --></Link></button>
+
 
     <h1>Evan Oneal</h1>
     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
     <img src='https://via.placeholder.com/50x50'/>
     <img src='https://via.placeholder.com/50x50'/>
-    <img src='https://via.placeholder.com/50x50'/>
+    <img src='https://via.placeholder.com/50x50'/><br/>
+    <button><Link href="/work">About Evan Oneal --></Link></button>
+
   </div>
   </>
 )
 
 export default Home
+
+const Link = ({ children, href }) => {
+  const router = useRouter()
+  return (
+    <a
+      href="#"
+      onClick={e => {
+        e.preventDefault()
+        // typically you want to use `next/link` for this usecase
+        // but this example shows how you can also access the router
+        // and use it manually
+        router.push(href)
+      }}
+    >
+      {children}
+      <style jsx>{`
+        a {
+          margin-right: 10px;
+        }
+      `}</style>
+    </a>
+  )
+}

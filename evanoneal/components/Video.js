@@ -8,6 +8,6 @@ const vid ={
 
 export default class Video extends Component {
   render () {
-    return <ReactPlayer style={vid} url='https://www.youtube.com/watch?v=YtCy8ecMBeQ' playing loop controls width={'100%'} height={'80vh'}/>
+    return <ReactPlayer style={vid} url='https://www.youtube.com/watch?v=YtCy8ecMBeQ' loop controls width={'100%'} height={'80vh'}/>
   }
 }

@@ -6,15 +6,17 @@ const Scroller = () => (
         <div><Popup /></div>
         <div><Popup /></div>
         <div><Popup /></div>
-
+        <div><Popup /></div>
+        <div><Popup /></div>
 
         <style jsx>{`
         .grid-container {
             display: grid;
-            grid-template-columns: auto auto auto auto;
+            grid-template-columns: auto auto auto auto auto auto auto;
             grid-gap: 10px;
             padding: 10px;
             overflow: scroll;
+            overflow-y: hidden;
 
         }
 

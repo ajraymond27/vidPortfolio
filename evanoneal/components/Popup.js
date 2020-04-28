@@ -33,7 +33,6 @@ export default function Popup(){
     return (
       <div>
         <img onClick={openModal} src='https://via.placeholder.com/400x200'/>
-        {/* <button onClick={openModal}>Open Modal</button> */}
         <Modal
           isOpen={modalIsOpen}
           onAfterOpen={afterOpenModal}
