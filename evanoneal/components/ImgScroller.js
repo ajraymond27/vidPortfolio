@@ -2,12 +2,12 @@ import React from 'react';
 
 const ImgScroller = () => (
     <div className="grid-container">
-        <img src='https://via.placeholder.com/400x200'/>
-        <img src='https://via.placeholder.com/400x200'/>
-        <img src='https://via.placeholder.com/400x200'/>
-        <img src='https://via.placeholder.com/400x200'/>
-        <img src='https://via.placeholder.com/400x200'/>
-        <img src='https://via.placeholder.com/400x200'/>
+        <img src='https://via.placeholder.com/300x200'/>
+        <img src='https://via.placeholder.com/300x200'/>
+        <img src='https://via.placeholder.com/300x200'/>
+        <img src='https://via.placeholder.com/300x200'/>
+        <img src='https://via.placeholder.com/300x200'/>
+        <img src='https://via.placeholder.com/300x200'/>
 
 
 
