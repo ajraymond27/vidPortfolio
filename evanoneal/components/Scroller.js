@@ -13,7 +13,9 @@ const Scroller = () => (
             display: grid;
             grid-template-columns: auto auto auto auto;
             grid-gap: 10px;
-            padding: 10px;;
+            padding: 10px;
+            overflow: scroll;
+
         }
 
         .grid-container > div {
