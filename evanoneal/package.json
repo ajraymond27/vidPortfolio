@@ -1,0 +1,20 @@
+{
+  "name": "evanoneal",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start"
+  },
+  "dependencies": {
+    "bootstrap": "^4.4.1",
+    "next": "9.3.5",
+    "react": "^16.13.1",
+    "react-bootstrap": "^1.0.1",
+    "react-dom": "^16.13.1",
+    "react-modal": "^3.11.2",
+    "redux": "^4.0.5",
+    "video-react": "^0.14.1"
+  }
+}
