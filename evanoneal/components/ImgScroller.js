@@ -1,13 +1,15 @@
 import React from 'react';
-import Popup from './Popup';
 
-const Scroller = () => (
+const ImgScroller = () => (
     <div className="grid-container">
-        <div><Popup /></div>
-        <div><Popup /></div>
-        <div><Popup /></div>
-        <div><Popup /></div>
-        <div><Popup /></div>
+        <img src='https://via.placeholder.com/400x200'/>
+        <img src='https://via.placeholder.com/400x200'/>
+        <img src='https://via.placeholder.com/400x200'/>
+        <img src='https://via.placeholder.com/400x200'/>
+        <img src='https://via.placeholder.com/400x200'/>
+        <img src='https://via.placeholder.com/400x200'/>
+
+
 
         <style jsx>{`
         .grid-container {
@@ -20,7 +22,7 @@ const Scroller = () => (
 
         }
 
-        .grid-container > div {
+        .grid-container > img {
             text-align: center;
             padding: 20px 0;
             font-size: 30px;
@@ -29,4 +31,4 @@ const Scroller = () => (
     </div>
 );
 
-export default Scroller;
+export default ImgScroller;

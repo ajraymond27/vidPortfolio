@@ -1,6 +1,7 @@
 import React from 'react';
 import Modal from 'react-modal';
 import Video from './Video';
+import ImgScroller from './ImgScroller';
  
 const customStyles = {
     top                   : '50%',
@@ -47,16 +48,12 @@ export default function Popup(){
           
           <h3>WRKN</h3>
           <Video />
-          <img src='https://via.placeholder.com/350x200'/>
-          <img src='https://via.placeholder.com/350x200'/>
-          <img src='https://via.placeholder.com/350x200'/>
+          <ImgScroller />
           <p>WRKN was made by some dude and Evan Oneal helped shoot and edit the video. Give video description and credits here</p>
 
           <h3>Doddie Oddie</h3>
           <Video />
-          <img src='https://via.placeholder.com/350x200'/>
-          <img src='https://via.placeholder.com/350x200'/>
-          <img src='https://via.placeholder.com/350x200'/>
+          <ImgScroller />
           <p>Doddie Oddie was made by some dude and Evan Oneal helped shoot and edit the video. Give video description and credits here</p>
         </Modal>
       </div>

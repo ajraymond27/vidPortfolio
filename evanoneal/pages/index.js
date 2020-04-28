@@ -4,7 +4,7 @@ import ReactPlayer from 'react-player'
 
 import Header from '../components/Header';
 import Video from '../components/Video';
-import Scroller from '../components/Scroller';
+import VidScroller from '../components/VidScroller';
 
 const reel ={
   width: '100%',
@@ -27,7 +27,7 @@ const Home = () => (
   </div>
   <div className="page"> 
     <h1>Latest</h1>
-    <Scroller />
+    <VidScroller />
     <button><Link href="/work">View All Work --></Link></button>
 
 
@@ -36,7 +36,7 @@ const Home = () => (
     <img src='https://via.placeholder.com/50x50'/>
     <img src='https://via.placeholder.com/50x50'/>
     <img src='https://via.placeholder.com/50x50'/><br/>
-    <button><Link href="/work">About Evan Oneal --></Link></button>
+    <button><Link href="/about">About Evan Oneal --></Link></button>
 
   </div>
   </>
