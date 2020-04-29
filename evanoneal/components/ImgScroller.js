@@ -1,34 +1,36 @@
-import React from 'react';
+import React, { Component } from 'react';
 
-const ImgScroller = () => (
-    <div className="grid-container">
-        <img src='https://via.placeholder.com/300x200'/>
-        <img src='https://via.placeholder.com/300x200'/>
-        <img src='https://via.placeholder.com/300x200'/>
-        <img src='https://via.placeholder.com/300x200'/>
-        <img src='https://via.placeholder.com/300x200'/>
-        <img src='https://via.placeholder.com/300x200'/>
+export default class ImgScroller extends Component {
+    constructor(props) {
+      super(props);
+    }
+  
+    render () {
+        return (
+            <ul className="grid-container">
+                {this.props.video.imgs.map((img) => (
 
+                        <img src={img.img} />
+                ))}
 
+                <style jsx>{`
+                    .grid-container {
+                        display: grid;
+                        grid-template-columns: auto auto auto auto auto auto auto;
+                        grid-gap: 10px;
+                        padding: 10px;
+                        overflow: scroll;
+                        overflow-y: hidden;
 
-        <style jsx>{`
-        .grid-container {
-            display: grid;
-            grid-template-columns: auto auto auto auto auto auto auto;
-            grid-gap: 10px;
-            padding: 10px;
-            overflow: scroll;
-            overflow-y: hidden;
+                    }
 
-        }
-
-        .grid-container > img {
-            text-align: center;
-            padding: 20px 0;
-            font-size: 30px;
-          }
-      `}</style>
-    </div>
-);
-
-export default ImgScroller;
+                    .grid-container > img {
+                        text-align: center;
+                        padding: 20px 0;
+                        font-size: 30px;
+                    }
+                `}</style>
+            </ul>
+        )
+    }
+  }

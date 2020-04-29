@@ -1,13 +1,25 @@
-import React, { Component } from 'react'
-import ReactPlayer from 'react-player'
- 
+import React, { Component } from 'react';
+import ReactPlayer from 'react-player';
+import ImgScroller from './ImgScroller';
+
 const vid ={
   margin: '0 auto',
   textAlign: 'center',
 }
 
 export default class Video extends Component {
+  constructor(props) {
+    super(props);
+  }
+
   render () {
-    return <ReactPlayer style={vid} url='https://www.youtube.com/watch?v=YtCy8ecMBeQ' loop controls width={'100%'} height={'80vh'}/>
+    return (
+      <>
+        <h4>{this.props.video.title}</h4>
+        <p>{this.props.video.desc}</p>
+        <ReactPlayer style={vid} url={this.props.video.youtube} loop controls width={'100%'} height={'80vh'}/>
+        <ImgScroller video={this.props.video} />
+      </>
+    )
   }
 }

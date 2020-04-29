@@ -15,7 +15,7 @@ const customStyles = {
 // Make sure to bind modal to your appElement (http://reactcommunity.org/react-modal/accessibility/)
 // Modal.setAppElement('#root')
  
-export default function Popup(){
+export default function Popup(props){
   var subtitle;
   const [modalIsOpen,setIsOpen] = React.useState(false);
   function openModal() {
@@ -33,7 +33,7 @@ export default function Popup(){
  
     return (
       <div>
-        <img onClick={openModal} src='https://via.placeholder.com/300x200'/>
+        <img onClick={openModal} src={props.client.coverImg}/>
         <Modal
           isOpen={modalIsOpen}
           onAfterOpen={afterOpenModal}
@@ -43,18 +43,12 @@ export default function Popup(){
         >
  
           <button onClick={closeModal}>X</button>
-          <h2>Ken6teen</h2>
-          <p>Ken is an up and coming taletnt in Bloomington, IN. He's been making beats since he was 16 and recently debuted his first album "Ken v Ken" that's available on all platforms. A combination of Kanye, Rocky, and Nas, Ken's flow reminds the Midwest of its roots.</p>
-          
-          <h3>WRKN</h3>
-          <Video />
-          <ImgScroller />
-          <p>WRKN was made by some dude and Evan Oneal helped shoot and edit the video. Give video description and credits here</p>
+          <h2>{props.client.client}</h2>
+          <p>{props.client.about}</p>
 
-          <h3>Doddie Oddie</h3>
-          <Video />
-          <ImgScroller />
-          <p>Doddie Oddie was made by some dude and Evan Oneal helped shoot and edit the video. Give video description and credits here</p>
+          {props.client.videos.map((video) => (
+            <Video video={video} />
+          ))}
         </Modal>
       </div>
     );
