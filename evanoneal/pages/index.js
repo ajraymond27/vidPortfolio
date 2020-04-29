@@ -31,7 +31,7 @@ export default class Home extends React.Component {
       <>
         <Header />
         <div style={reel}>
-          <ReactPlayer style={vid} url='https://www.youtube.com/watch?v=YtCy8ecMBeQ' playing loop controls width={'100%'} height={'80vh'}/>
+          <ReactPlayer style={vid} url='https://www.youtube.com/watch?v=YtCy8ecMBeQ' loop controls width={'100%'} height={'80vh'}/>
         </div>
 
         <div className="page"> 
