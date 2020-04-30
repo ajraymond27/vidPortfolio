@@ -9,7 +9,7 @@ export default class VidScroller extends React.Component {
   
     render() {
         return (
-            <>
+            <div className="strip">
             <h1>{this.props.vids.category}</h1>
             <div className="grid-container">
                 {this.props.vids.clients.map((client) => (
@@ -17,6 +17,10 @@ export default class VidScroller extends React.Component {
                 ))}
 
                 <style jsx>{`
+                    .strip {
+                        width: 100%;
+                        background-color: var(--base1);
+                    }
                     .grid-container {
                         display: grid;
                         grid-gap: 10px;
@@ -37,7 +41,7 @@ export default class VidScroller extends React.Component {
                     }
                 `}</style>
             </div>
-            </>
+            </div>
         )
     }
   }

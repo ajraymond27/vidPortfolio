@@ -3,24 +3,19 @@ import Navbar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav'
 
 const navbar ={
-  backgroundColor: 'var(--shadow)',
+  backgroundColor: 'var(--white)',
 }
 
 const logo = {
-  color: 'var(--white)',
+  color: 'var(--base1)',
   fontWeight: 'bold',
   fontSize: '24pt',
 }
 
-const nav = {
-  float: 'right',
-  display: 'block',
-  alignText: 'right',
-}
-
 export default () => (
 
-    <Navbar collapseOnSelect expand="lg" style={navbar}>
+    <Navbar collapseOnSelect expand="lg" sticky="top" style={navbar}>
+      <Navbar.Brand href="/" style={logo}>LOGO</Navbar.Brand>
       <Navbar.Brand href="/" style={logo}>Evan Oneal</Navbar.Brand>
       <Navbar.Toggle aria-controls="responsive-navbar-nav" />
       <Navbar.Collapse id="responsive-navbar-nav" className="justify-content-end">
@@ -34,11 +29,6 @@ export default () => (
     </Navbar>
 )
 
-//   <div style={nav}>
-
-
-//   </div>
-// )
 
 const Link = ({ children, href }) => {
     const router = useRouter()
@@ -56,8 +46,10 @@ const Link = ({ children, href }) => {
         {children}
         <style jsx>{`
           a {
-            margin-right: 25px;
-            color: var(--white);
+            margin-right: 50px;
+            color: var(--base1);
+            font-size: 14pt;
+            font-weight: bold;
           }
         `}</style>
       </a>
