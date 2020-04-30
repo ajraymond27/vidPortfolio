@@ -5,7 +5,7 @@ const videos = [
             {
             client: '',
             about: '',
-            coverImg: 'https://via.placeholder.com/300x200',
+            coverImg: '/coverImgs/coconutsMonkeys.jpg',
             videos: [
                 {
                 title: 'Coconuts & Monkeys',
@@ -24,7 +24,7 @@ const videos = [
             {
             client: '',
             about: '',
-            coverImg: 'https://via.placeholder.com/300x200',
+            coverImg: '',
             videos: [
                 {
                 title: 'Boo Hag',
@@ -110,7 +110,7 @@ const videos = [
             {
             client: 'Flying Lotus',
             about: 'Flying Lotus description',
-            coverImg: '/blackBalloons.jpg',
+            coverImg: '/coverImgs/blackBalloons.jpg',
             videos: [
                 {
                 title: 'Black Balloons Reprise',
