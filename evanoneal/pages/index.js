@@ -9,8 +9,8 @@ import Footer from '../components/Footer';
 
 const reel ={
   width: '100%',
-  height: '90vh',
-  marginTop: '20px',
+  height: '80vh',
+  margin: '20px 0px 20px 0px',
   textAlign: 'center',
 }
 

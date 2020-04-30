@@ -12,10 +12,10 @@ body h1 h2 h3 h4 p span a button {
   }
 
 h1 {
-  font-size: 36pt;
+  font-size: 24pt;
   color: var(--base1);
   font-weight: bold;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
 }
 
 
