@@ -43,7 +43,7 @@ const latest = [
             {
             client: 'Huckleberry Funk',
             about: 'Huckleberry Funk description',
-            coverImg: '/coverImgs/liveAtBluebird.jpg',
+            coverImg: '/coverImgs/liveAtBlueBird.jpg',
             videos: [
                 {
                 title: 'Live at BlueBird',
