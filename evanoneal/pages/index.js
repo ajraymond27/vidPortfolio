@@ -8,10 +8,10 @@ import VidScroller from '../components/VidScroller';
 
 const reel ={
   width: '100%',
-  height: '80vh',
+  height: '70vh',
   margin: '0 auto',
   textAlign: 'center',
-  backgroundColor: '#000',
+  backgroundColor: 'var(--shadow)',
 }
 
 const vid ={
@@ -31,7 +31,7 @@ export default class Home extends React.Component {
       <>
         <Header />
         <div style={reel}>
-          <ReactPlayer style={vid} url='https://www.youtube.com/watch?v=YtCy8ecMBeQ' loop controls width={'100%'} height={'80vh'}/>
+          <ReactPlayer style={vid} url='https://www.youtube.com/watch?v=YtCy8ecMBeQ' loop controls width={'80%'} height={'70vh'}/>
         </div>
 
         <div className="page"> 

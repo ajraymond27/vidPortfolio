@@ -1,12 +1,19 @@
-body {
-    font-family: 'SF Pro Text', 'SF Pro Icons', 'Helvetica Neue', 'Helvetica',
-      'Arial', sans-serif;
+:root {
+  --white: #fff;
+  --highlight: #7BA1A6;
+  --base1: #74858C;
+  --base2: #343E40;
+  --base3: #1F2326;
+  --shadow: #0B0C0D;
+}
 
+body h1 h2 h3 h4 p span a button {
+    font-family: 'Courier New', Courier, monospace 'Comic Sans Ms';
   }
-
+  
   .page{
     padding: 10px;
     margin: 0 auto;
-    background-color:#fff;
+    background-color: var(--white);
 
   }
