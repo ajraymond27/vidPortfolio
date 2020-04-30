@@ -1,7 +1,6 @@
 import React from 'react';
 import Modal from 'react-modal';
 import Video from './Video';
-import ImgScroller from './ImgScroller';
  
 const customStyles = {
     top                   : '50%',
@@ -11,6 +10,10 @@ const customStyles = {
     marginRight           : '-50%',
     transform             : 'translate(-50%, -50%)'
 };
+
+const coverImg = {
+  width: '100%',
+}
  
 // Make sure to bind modal to your appElement (http://reactcommunity.org/react-modal/accessibility/)
 // Modal.setAppElement('#root')
@@ -33,7 +36,7 @@ export default function Popup(props){
  
     return (
       <div>
-        <img onClick={openModal} src={props.client.coverImg}/>
+        <img onClick={openModal} src={props.client.coverImg} style={coverImg}/>
         <Modal
           isOpen={modalIsOpen}
           onAfterOpen={afterOpenModal}

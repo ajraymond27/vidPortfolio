@@ -24,7 +24,7 @@ const videos = [
             {
             client: '',
             about: '',
-            coverImg: '',
+            coverImg: '/coverImgs/boohag.jpg',
             videos: [
                 {
                 title: 'Boo Hag',
@@ -43,7 +43,7 @@ const videos = [
             {
             client: '',
             about: '',
-            coverImg: 'https://via.placeholder.com/300x200',
+            coverImg: '/coverImgs/mattersEnd.png',
             videos: [
                 {
                 title: 'Matters In The End',
@@ -67,7 +67,7 @@ const videos = [
             {
             client: 'Ken6teen',
             about: 'Ken is a rapper -- put description here',
-            coverImg: 'https://via.placeholder.com/300x200',
+            coverImg: '/coverImgs/wrkn.jpg',
             videos: [
                 {
                 title: 'WRKN',
@@ -141,7 +141,7 @@ const videos = [
             {
             client: 'Huckleberry Funk',
             about: 'Huckleberry Funk description',
-            coverImg: 'https://via.placeholder.com/300x200',
+            coverImg: '/coverImgs/liveAtBlueBird.jpg',
             videos: [
                 {
                 title: 'Live at BlueBird',
@@ -160,7 +160,7 @@ const videos = [
             {
             client: 'Soul T7pe',
             about: 'Soul T7pe description',
-            coverImg: 'https://via.placeholder.com/300x200',
+            coverImg: '/coverImgs/moshWit.jpg',
             videos: [
                 {
                 title: 'Mosh Wit',
@@ -179,7 +179,7 @@ const videos = [
             {
             client: 'Tay K',
             about: 'Tay K description',
-            coverImg: 'https://via.placeholder.com/300x200',
+            coverImg: '/coverImgs/gottaBlast.jpg',
             videos: [
                 {
                 title: 'Tay K Edits',
@@ -198,7 +198,7 @@ const videos = [
             {
             client: 'Ty',
             about: 'Ty description',
-            coverImg: 'https://via.placeholder.com/300x200',
+            coverImg: '/coverImgs/',
             videos: [
                 {
                 title: 'IDK TITLE',
@@ -222,7 +222,7 @@ const videos = [
             {
             client: 'MadCore',
             about: 'This company is described like this  ---- ',
-            coverImg: 'https://via.placeholder.com/300x200',
+            coverImg: '/coverImgs/madcore.jpg',
             videos: [
                 {
                 title: 'Fall 2019 Clothing Line',
@@ -241,7 +241,7 @@ const videos = [
             {
             client: 'Ada and the Engine',
             about: 'This company is described like this  ---- ',
-            coverImg: 'https://via.placeholder.com/300x200',
+            coverImg: '/coverImgs/',
             videos: [
                 {
                 title: 'Ada and the Engine',
@@ -260,7 +260,7 @@ const videos = [
             {
             client: 'Bloomington Community Orchard',
             about: 'This company is described like this  ---- ',
-            coverImg: 'https://via.placeholder.com/300x200',
+            coverImg: '/coverImgs/orchard.jpg',
             videos: [
                 {
                 title: 'Bloomington Community Orchard',
@@ -279,7 +279,7 @@ const videos = [
             {
             client: 'Blueline Media',
             about: 'This company is described like this  ---- ',
-            coverImg: 'https://via.placeholder.com/300x200',
+            coverImg: '/coverImgs/ghostbusters.jpg',
             videos: [
                 {
                 title: 'Ghost Busters Promo',
@@ -298,7 +298,7 @@ const videos = [
             {
             client: 'Cardinal Stage',
             about: 'This company is described like this  ---- ',
-            coverImg: 'https://via.placeholder.com/300x200',
+            coverImg: '/coverImgs/hedwig.jpg',
             videos: [
                 {
                 title: 'Hedwig and the Angry Inch',
