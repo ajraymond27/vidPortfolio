@@ -5,6 +5,7 @@ import ReactPlayer from 'react-player';
 import latest from '../data/latest';
 import Header from '../components/Header';
 import VidScroller from '../components/VidScroller';
+import Footer from '../components/Footer';
 
 const reel ={
   width: '100%',
@@ -14,8 +15,23 @@ const reel ={
 }
 
 const vid ={
-    margin: '0 auto',
-    textAlign: 'center',
+  margin: '0 auto',
+  textAlign: 'center',
+}
+
+const button ={
+  backgroundColor: 'var(--highlight )',
+  padding: '10px 20px 10px 20px',
+  border: '0px',
+  borderRadius: '5px',
+  float: 'right',
+  color: 'var(--white)',
+  width: '250px',
+}
+
+const evan ={
+  width: '20%',
+  margin: 10,
 }
 
 export default class Home extends React.Component {
@@ -30,23 +46,28 @@ export default class Home extends React.Component {
       <>
         <Header />
         <div style={reel}>
-          <h1></h1>
           <ReactPlayer style={vid} url='https://www.youtube.com/watch?v=YtCy8ecMBeQ' loop controls width={'80%'} height={'80vh'}/>
         </div>
 
         <div className="page"> 
+
           {this.state.latest.map((video) => (
             <VidScroller vids={video} />
           ))}
-          <button><Link href="/work">View All Work --></Link></button>
+          <Link href="/work"><button style={button}>View All Work --> </button></Link>
 
-          <h1>Evan Oneal</h1>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+          {/* <h1>Evan Oneal</h1>
+          <div>
+            <img src='/evan.jpg' style={evan} />
+            <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</span>
+          </div>
           <img src='https://via.placeholder.com/50x50'/>
           <img src='https://via.placeholder.com/50x50'/>
           <img src='https://via.placeholder.com/50x50'/><br/>
-          <button><Link href="/about">About Evan Oneal --></Link></button>
+          <Link href="/about"><button style={button}>About Evan Oneal --> </button></Link> */}
+
         </div>
+        <Footer />
       </>
     )
   }
@@ -70,8 +91,10 @@ const Link = ({ children, href }) => {
       <style jsx>{`
         a {
           margin-right: 10px;
+          color: var(--white);
         }
       `}</style>
     </a>
+    
   )
 }

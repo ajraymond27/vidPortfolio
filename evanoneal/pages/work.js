@@ -1,6 +1,7 @@
 import videos from '../data/videos';
 import Header from '../components/Header';
 import VidScroller from '../components/VidScroller';
+import Footer from '../components/Footer';
 
 export default class Work extends React.Component {
   constructor(props) {
@@ -12,13 +13,13 @@ export default class Work extends React.Component {
   render() {
     return (
       <>
-      <Header />
-      <div className="page"> 
-        {this.state.videos.map((video) => (
-          <VidScroller vids={video} />
-        ))}
-      </div>
-
+        <Header />
+        <div className="page"> 
+          {this.state.videos.map((video) => (
+            <VidScroller vids={video} />
+          ))}
+        </div>
+        <Footer />
       </>
     )
   }

@@ -1,4 +1,6 @@
 import Header from '../components/Header';
+import Footer from '../components/Footer';
+
 
 const Contact = () => (
   <>
@@ -7,6 +9,7 @@ const Contact = () => (
     <h1>Contact</h1>
     <p>email</p>
   </div>
+  <Footer />
   </>
 )
 

@@ -1,4 +1,6 @@
 import Header from '../components/Header';
+import Footer from '../components/Footer';
+
 
 const About = () => (
   <>
@@ -45,6 +47,7 @@ const About = () => (
       </tr>
     </table>
   </div>
+  <Footer />
   </>
 )
 
