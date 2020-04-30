@@ -1,3 +1,6 @@
+import blackBaloons from '../assets/blackBalloons.jpg';
+
+
 const videos = [
     {
         category: 'Short Films',
@@ -110,7 +113,7 @@ const videos = [
             {
             client: 'Flying Lotus',
             about: 'Flying Lotus description',
-            coverImg: 'https://via.placeholder.com/300x200',
+            coverImg: {blackBaloons},
             videos: [
                 {
                 title: 'Black Balloons Reprise',
