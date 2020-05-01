@@ -9,7 +9,45 @@ const videos = [
             videos: [
                 {
                 title: '',
-                youtube: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ',
+                youtube: 'https://youtu.be/__0NFWVVa4M',
+                desc: '',
+                imgs: [
+                    {img: 'https://via.placeholder.com/300x200'},
+                    {img: 'https://via.placeholder.com/300x200'},
+                    {img: 'https://via.placeholder.com/300x200'},
+                    {img: 'https://via.placeholder.com/300x200'},
+                    {img: 'https://via.placeholder.com/300x200'},
+                ]
+                }
+                ]
+            },
+            {
+            client: 'Ghost Busters Short',
+            about: 'This company is described like this  ---- ',
+            coverImg: '/coverImgs/ghostbusters.jpg',
+            videos: [
+                {
+                title: '',
+                youtube: 'https://youtu.be/-RqJC_MWW6M',
+                desc: 'This video contains this ...',
+                imgs: [
+                    {img: 'https://via.placeholder.com/300x200'},
+                    {img: 'https://via.placeholder.com/300x200'},
+                    {img: 'https://via.placeholder.com/300x200'},
+                    {img: 'https://via.placeholder.com/300x200'},
+                    {img: 'https://via.placeholder.com/300x200'},
+                ]
+                }
+                ]
+            },
+            {
+            client: 'Sorrows of Painting',
+            about: 'This short film is described like this ...',
+            coverImg: '',
+            videos: [
+                {
+                title: '',
+                youtube: 'https://youtu.be/enorz3h52Dg',
                 desc: '',
                 imgs: [
                     {img: 'https://via.placeholder.com/300x200'},
@@ -47,7 +85,7 @@ const videos = [
             videos: [
                 {
                 title: '',
-                youtube: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ',
+                youtube: 'https://www.youtube.com/watch?v=YtCy8ecMBeQ',
                 desc: '',
                 imgs: [
                     {img: 'https://via.placeholder.com/300x200'},
@@ -83,7 +121,7 @@ const videos = [
                 },
                 {
                 title: 'Doddie Oddie',
-                youtube: 'https://www.youtube.com/watch?v=mqCm6ZyS8a0',
+                youtube: 'https://youtu.be/uwPMeX5NosY',
                 desc: 'This video displays ---. It was shot by ---. Evan did ---.',
                 imgs: [
                     {img: 'https://via.placeholder.com/300x200'},
@@ -145,7 +183,7 @@ const videos = [
             videos: [
                 {
                 title: 'Live at BlueBird',
-                youtube: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ',
+                youtube: 'https://youtu.be/gNgemfo4XmU',
                 desc: 'This video displays ---. It was shot by ---. Evan did ---.',
                 imgs: [
                     {img: 'https://via.placeholder.com/300x200'},
@@ -164,7 +202,7 @@ const videos = [
             videos: [
                 {
                 title: 'Mosh Wit',
-                youtube: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ',
+                youtube: 'https://www.youtube.com/watch?v=SCAFlF53gkQ',
                 desc: 'This video displays ---. It was shot by ---. Evan did ---.',
                 imgs: [
                     {img: 'https://via.placeholder.com/300x200'},
@@ -183,7 +221,7 @@ const videos = [
             videos: [
                 {
                 title: 'Tay K Edits',
-                youtube: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ',
+                youtube: 'https://www.youtube.com/watch?v=NIualoDGqhI',
                 desc: 'This video displays ---. It was shot by ---. Evan did ---.',
                 imgs: [
                     {img: 'https://via.placeholder.com/300x200'},
@@ -226,7 +264,7 @@ const videos = [
             videos: [
                 {
                 title: 'Fall 2019 Clothing Line',
-                youtube: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ',
+                youtube: 'https://youtu.be/do8jrxWt6RE',
                 desc: 'This video contains this ...',
                 imgs: [
                     {img: 'https://via.placeholder.com/300x200'},
@@ -237,44 +275,6 @@ const videos = [
                 ]
                 }
                 ]
-            },
-            {
-            client: 'Ada and the Engine',
-            about: 'This company is described like this  ---- ',
-            coverImg: '/coverImgs/',
-            videos: [
-                {
-                title: 'Ada and the Engine',
-                youtube: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ',
-                desc: 'This video contains this ...',
-                imgs: [
-                    {img: 'https://via.placeholder.com/300x200'},
-                    {img: 'https://via.placeholder.com/300x200'},
-                    {img: 'https://via.placeholder.com/300x200'},
-                    {img: 'https://via.placeholder.com/300x200'},
-                    {img: 'https://via.placeholder.com/300x200'},
-                ]
-                }
-                ]
-            },
-            {
-            client: 'Bloomington Community Orchard',
-            about: 'This company is described like this  ---- ',
-            coverImg: '/coverImgs/orchard.jpg',
-            videos: [
-                {
-                title: 'Bloomington Community Orchard',
-                youtube: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ',
-                desc: 'This video contains this ...',
-                imgs: [
-                    {img: 'https://via.placeholder.com/300x200'},
-                    {img: 'https://via.placeholder.com/300x200'},
-                    {img: 'https://via.placeholder.com/300x200'},
-                    {img: 'https://via.placeholder.com/300x200'},
-                    {img: 'https://via.placeholder.com/300x200'},
-                ]
-                }
-            ]
             },
             {
             client: 'Blueline Media',
@@ -282,8 +282,8 @@ const videos = [
             coverImg: '/coverImgs/ghostbusters.jpg',
             videos: [
                 {
-                title: 'Ghost Busters Promo',
-                youtube: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ',
+                title: 'Ada and the Engine',
+                youtube: 'https://youtu.be/qoDo1d9_pwc',
                 desc: 'This video contains this ...',
                 imgs: [
                     {img: 'https://via.placeholder.com/300x200'},
@@ -292,17 +292,22 @@ const videos = [
                     {img: 'https://via.placeholder.com/300x200'},
                     {img: 'https://via.placeholder.com/300x200'},
                 ]
-                }
-            ]
-            },
-            {
-            client: 'Cardinal Stage',
-            about: 'This company is described like this  ---- ',
-            coverImg: '/coverImgs/hedwig.jpg',
-            videos: [
+                },
                 {
                 title: 'Hedwig and the Angry Inch',
-                youtube: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ',
+                youtube: 'https://youtu.be/dWGB9Mgehw8',
+                desc: 'This video contains this ...',
+                imgs: [
+                    {img: 'https://via.placeholder.com/300x200'},
+                    {img: 'https://via.placeholder.com/300x200'},
+                    {img: 'https://via.placeholder.com/300x200'},
+                    {img: 'https://via.placeholder.com/300x200'},
+                    {img: 'https://via.placeholder.com/300x200'},
+                ]
+                },
+                {
+                title: 'Bloomington Community Orchard',
+                youtube: 'https://youtu.be/2FrK0sU5i5M',
                 desc: 'This video contains this ...',
                 imgs: [
                     {img: 'https://via.placeholder.com/300x200'},
