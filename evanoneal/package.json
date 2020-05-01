@@ -19,6 +19,7 @@
     "video-react": "^0.14.1"
   },
   "devDependencies": {
-    "file-loader": "^6.0.0"
+    "file-loader": "^6.0.0",
+    "react-social-icons": "^4.1.0"
   }
 }

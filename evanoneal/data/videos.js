@@ -3,14 +3,14 @@ const videos = [
         category: 'Short Films',
         clients: [
             {
-            client: '',
-            about: '',
+            client: 'Coconuts & Monkeys',
+            about: 'This short film is described like this ...',
             coverImg: '/coverImgs/coconutsMonkeys.jpg',
             videos: [
                 {
-                title: 'Coconuts & Monkeys',
+                title: '',
                 youtube: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ',
-                desc: 'This short film is described like this ...',
+                desc: '',
                 imgs: [
                     {img: 'https://via.placeholder.com/300x200'},
                     {img: 'https://via.placeholder.com/300x200'},
@@ -22,14 +22,14 @@ const videos = [
                 ]
             },
             {
-            client: '',
+            client: 'Boo Hag',
             about: '',
             coverImg: '/coverImgs/boohag.jpg',
             videos: [
                 {
-                title: 'Boo Hag',
+                title: '',
                 youtube: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ',
-                desc: 'This short film is described like this ...',
+                desc: '',
                 imgs: [
                     {img: 'https://via.placeholder.com/300x200'},
                     {img: 'https://via.placeholder.com/300x200'},
@@ -41,14 +41,14 @@ const videos = [
                 ]
             },
             {
-            client: '',
-            about: '',
+            client: 'Matters In The End',
+            about: 'This short film is described like this ...',
             coverImg: '/coverImgs/mattersEnd.png',
             videos: [
                 {
-                title: 'Matters In The End',
+                title: '',
                 youtube: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ',
-                desc: 'This short film is described like this ...',
+                desc: '',
                 imgs: [
                     {img: 'https://via.placeholder.com/300x200'},
                     {img: 'https://via.placeholder.com/300x200'},
