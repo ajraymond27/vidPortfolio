@@ -29,19 +29,20 @@ h1 {
   /* Scrollbar Styles */
   /* width */
 ::-webkit-scrollbar {
-  width: 10px;
+  width: 5px;
+  height: 5px;
 }
 
 /* Track */
 ::-webkit-scrollbar-track {
   border: solid 0.5px var(--highlight);
-  border-radius: 10px;
+  border-radius: 5px;
 }
  
 /* Handle */
 ::-webkit-scrollbar-thumb {
   background: var(--highlight); 
-  border-radius: 10px;
+  border-radius: 5px;
 }
 
 /* Handle on hover */
