@@ -20,7 +20,6 @@ export default function Footer () {
         <footer style={footer}>
             <SocialIcon url="https://www.instagram.com/eoneal1/?hl=en" bgColor='grey' style={social}/>
             <SocialIcon url="https://www.linkedin.com/in/evan-oneal/" bgColor='grey'style={social}/>
-            <SocialIcon url="https://www.youtube.com/channel/UCZ4o4_LvjyYUnJ9MrLKZtRQ" bgColor='grey' style={social}/>
             <SocialIcon url="http://evanjoneal@gmail.com" bgColor='grey'style={social}/>
         </footer>
     )

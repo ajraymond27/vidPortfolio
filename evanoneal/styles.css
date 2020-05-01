@@ -1,10 +1,10 @@
 :root {
   --white: #fff;
-  --highlight: #7BA1A6;
-  --base1: #1D4B44;
-  --base2: #1EE4DF;
-  --base3: #B417B4;
-  --shadow: #201920;
+  --highlight: #71ced9;
+  --base1: #bf8d7a;
+  --base2: #bf491f;
+  --base3: #8c5b49;
+  --shadow: #1d3d59;
 }
 
 body h1 h2 h3 h4 p span a button {
