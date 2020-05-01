@@ -34,7 +34,7 @@ h1 {
 
 /* Track */
 ::-webkit-scrollbar-track {
-  border: solid 1px var(--highlight);
+  border: solid 0.5px var(--highlight);
   border-radius: 10px;
 }
  
@@ -48,3 +48,4 @@ h1 {
 ::-webkit-scrollbar-thumb:hover {
   background: var(--base1); 
 }
+
