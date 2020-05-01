@@ -29,7 +29,7 @@ h1 {
     margin: 0 auto;
     background-color: var(--white);
     display: flex;
-    min-height: 100vh;
+    min-height: 50vh;
     flex-direction: column;
     flex: 1,
   }
