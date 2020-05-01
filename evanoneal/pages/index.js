@@ -8,8 +8,8 @@ import VidScroller from '../components/VidScroller';
 import Footer from '../components/Footer';
 
 const reel ={
-  width: '100%',
-  height: '80vh',
+  width: "100%",
+  height: 'auto',
   margin: '20px 0px 20px 0px',
   textAlign: 'center',
 }
@@ -17,6 +17,7 @@ const reel ={
 const vid ={
   margin: '0 auto',
   textAlign: 'center',
+  height: '80vh',
 }
 
 const button ={
@@ -46,7 +47,7 @@ export default class Home extends React.Component {
       <>
         <Header />
         <div style={reel}>
-          <ReactPlayer style={vid} url='https://www.youtube.com/watch?v=YtCy8ecMBeQ' loop controls width={'80%'} height={'80vh'}/>
+          <ReactPlayer style={vid} url='https://www.youtube.com/watch?v=YtCy8ecMBeQ' loop controls width={'100%'} />
         </div>
 
         <div className="page"> 
