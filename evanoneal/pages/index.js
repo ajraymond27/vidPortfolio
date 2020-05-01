@@ -10,7 +10,7 @@ import Footer from '../components/Footer';
 const reel ={
   width: "100%",
   height: 'auto',
-  margin: '20px 0px 20px 0px',
+  margin: '0px 0px 20px 0px',
   textAlign: 'center',
 }
 
@@ -21,7 +21,7 @@ const vid ={
 }
 
 const button ={
-  backgroundColor: 'var(--highlight )',
+  backgroundColor: 'var(--shadow)',
   padding: '10px 20px 10px 20px',
   border: '0px',
   borderRadius: '5px',
