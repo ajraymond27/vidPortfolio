@@ -1,7 +1,7 @@
 import React from 'react';
 
 const footer = {
-    height: '75px',
+    height: '50px',
     marginTop: '25px',
     color: 'var(--highlight)',
 }
@@ -9,8 +9,6 @@ const footer = {
 export default function Footer () {
     return (
         <footer style={footer}>
-            <br />
-            <br />
             <p>FOOTER --- Evan Oneal Videography</p>
         </footer>
     )
