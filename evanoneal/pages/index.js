@@ -26,7 +26,7 @@ const vid ={
 }
 
 const button ={
-  backgroundColor: 'var(--shadow)',
+  backgroundColor: 'var(--base1)',
   padding: '10px 20px 10px 20px',
   border: '0px',
   borderRadius: '5px',
@@ -37,14 +37,14 @@ const button ={
 
 const evan ={
   width: '100%',
-  borderTop: 'solid 1px var(--shadow)',
-  borderBottom: 'solid 1px var(--shadow)',
+  // borderTop: 'solid 1px var(--shadow)',
+  // borderBottom: 'solid 1px var(--shadow)',
   padding: '10px 0px 10px 0px',
   marginTop: 10,
 }
 
 const icon ={
-  fontSize: '72pt',
+  fontSize: '100pt',
   color: 'var(--base1)',
 }
 
@@ -70,8 +70,6 @@ export default class Home extends React.Component {
           ))}
 
           <div style = {evan}>
-            <h1>Evan Oneal</h1>
-            <p>Inspired by Person1, Person2, Person3, I create impactful stories through visual excellence.</p>
             <div className="service">
               <FontAwesomeIcon icon={faFilm} style={icon} />
               <h4>Short Films</h4>
@@ -108,8 +106,10 @@ export default class Home extends React.Component {
         /* large desktop screen */
         @media (min-device-width:1824px) {
           .service {
-            width: 30vw;
+            width: 33%;
             height: auto;
+            text-align: center;
+            float: left;
           }
         
         }
@@ -117,9 +117,10 @@ export default class Home extends React.Component {
         /* Small desktop screen */
         @media (max-width:1224px) {
           .service {
-            width: 30vw;
+            width: 30%;
             height: auto;
-          }
+            text-align: center;
+            float: left;          }
         
         }
         
@@ -127,16 +128,18 @@ export default class Home extends React.Component {
         @media (max-device-width:1224px) {
         @media (orientation: portrait) {
           .service {
-            width: 30vw;
+            width: 30%;
             height: auto;
-          }
+            text-align: center;
+            float: left;          }
         
         }
         @media (orientation: landscape) {
           .service {
-            width: 30vw;
+            width: 30%;
             height: auto;
-          }
+            text-align: center;
+            float: left;          }
         
         }
         }
@@ -145,15 +148,19 @@ export default class Home extends React.Component {
         @media (max-device-width:850px) {
         @media (orientation: portrait) {
           .service {
-            width: 30vw;
+            width: 100%;
             height: auto;
+            text-align: center;
+            float: left;
           }
         
         }
         @media (orientation: landscape) {
           .service {
-            width: 30vw;
+            width: 100%;
             height: auto;
+            text-align: center;
+            float: left;
           }
         
         }

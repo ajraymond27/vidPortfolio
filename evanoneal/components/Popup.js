@@ -13,19 +13,14 @@ function Content(props) {
       aria-labelledby="contained-modal-title-vcenter"
       centered
     >
-      <Modal.Header closeButton >
+      <Modal.Header closeButton style={{border: 'none'}}>
+        <h1>{props.client.client}</h1>
       </Modal.Header>
-      <Modal.Body>
-        <h2>{props.client.client}</h2>
-        <p>{props.client.about}</p>
-
+      <Modal.Body >
         {props.client.videos.map((video) => (
           <Video video={video} />
         ))}
       </Modal.Body>
-      {/* <Modal.Footer>
-        <Button onClick={props.onHide}>Close</Button>
-      </Modal.Footer> */}
     </Modal>
   );
 }
@@ -35,19 +30,26 @@ export default function Popup(props) {
 
   return (
     <>
-      <img  onClick={() => setModalShow(true)} src={props.client.coverImg} style={coverImg}/>
+      <img  onClick={() => setModalShow(true)} src={props.client.coverImg} className='coverImg'/>
 
       <Content
         client = {props.client}
         show={modalShow}
         onHide={() => setModalShow(false)}
       />
+
+  <style jsx>{`
+    .coverImg {
+      width: 100%;
+      box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.2), 0 3px 5px 0 rgba(0, 0, 0, 0.19);
+    }
+    .coverImg:hover {
+      transform: scale(1.02);
+      cursor: pointer;
+    }
+
+    `}</style>
     </>
   );
-}
-
-
-const coverImg = {
-  width: '100%',
 }
  

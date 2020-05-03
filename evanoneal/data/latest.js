@@ -3,14 +3,12 @@ const latest = [
         category: '',
         clients: [
             {
-            client: '',
-            about: '',
+            client: 'Matters In The End',
             coverImg: '/coverImgs/mattersEnd.png',
             videos: [
                 {
-                title: 'Matters In The End',
+                title: '',
                 youtube: 'https://www.youtube.com/watch?v=YtCy8ecMBeQ',
-                desc: 'This short film is described like this ...',
                 imgs: [
                     {img: 'https://via.placeholder.com/300x200'},
                     {img: 'https://via.placeholder.com/300x200'},
@@ -23,13 +21,11 @@ const latest = [
             },
             {
             client: 'Soul T7pe',
-            about: 'Soul T7pe description',
             coverImg: '/coverImgs/moshWit.jpg',
             videos: [
                 {
                 title: 'Mosh Wit',
-                youtube: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ',
-                desc: 'This video displays ---. It was shot by ---. Evan did ---.',
+                youtube: 'https://www.youtube.com/watch?v=SCAFlF53gkQ',
                 imgs: [
                     {img: 'https://via.placeholder.com/300x200'},
                     {img: 'https://via.placeholder.com/300x200'},
@@ -42,13 +38,11 @@ const latest = [
             },
             {
             client: 'Huckleberry Funk',
-            about: 'Huckleberry Funk description',
             coverImg: '/coverImgs/liveAtBlueBird.jpg',
             videos: [
                 {
                 title: 'Live at BlueBird',
-                youtube: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ',
-                desc: 'This video displays ---. It was shot by ---. Evan did ---.',
+                youtube: 'https://youtu.be/gNgemfo4XmU',
                 imgs: [
                     {img: 'https://via.placeholder.com/300x200'},
                     {img: 'https://via.placeholder.com/300x200'},
@@ -61,13 +55,11 @@ const latest = [
             },
             {
             client: 'Ken6teen',
-            about: 'Ken is a rapper -- put description here',
             coverImg: '/coverImgs/wrkn.jpg',
             videos: [
                 {
                 title: 'WRKN',
                 youtube: 'https://www.youtube.com/watch?v=qq-hNCClS6s',
-                desc: 'This video displays ---. It was shot by ---. Evan did ---.',
                 imgs: [
                     {img: 'https://via.placeholder.com/300x200'},
                     {img: 'https://via.placeholder.com/300x200'},
@@ -79,7 +71,6 @@ const latest = [
                 {
                 title: 'Doddie Oddie',
                 youtube: 'https://www.youtube.com/watch?v=mqCm6ZyS8a0',
-                desc: 'This video displays ---. It was shot by ---. Evan did ---.',
                 imgs: [
                     {img: 'https://via.placeholder.com/300x200'},
                     {img: 'https://via.placeholder.com/300x200'},
@@ -91,7 +82,6 @@ const latest = [
                 {
                 title: 'New Cut',
                 youtube: 'https://www.youtube.com/watch?v=nwbk619QD7k',
-                desc: 'This video displays ---. It was shot by ---. Evan did ---.',
                 imgs: [
                     {img: 'https://via.placeholder.com/300x200'},
                     {img: 'https://via.placeholder.com/300x200'},
@@ -104,13 +94,11 @@ const latest = [
             },
             {
             client: 'Blueline Media',
-            about: 'This company is described like this  ---- ',
             coverImg: '/coverImgs/ghostbusters.jpg',
             videos: [
                 {
                 title: 'Ghost Busters Promo',
-                youtube: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ',
-                desc: 'This video contains this ...',
+                youtube: 'https://youtu.be/-RqJC_MWW6M',
                 imgs: [
                     {img: 'https://via.placeholder.com/300x200'},
                     {img: 'https://via.placeholder.com/300x200'},

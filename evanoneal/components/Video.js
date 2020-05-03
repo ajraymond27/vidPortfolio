@@ -16,7 +16,6 @@ export default class Video extends Component {
     return (
       <>
         <h4>{this.props.video.title}</h4>
-        <p>{this.props.video.desc}</p>
         <ReactPlayer style={vid} url={this.props.video.youtube} loop controls width={'100%'} height={'100vh'}/>
         <ImgScroller video={this.props.video} />
       </>
