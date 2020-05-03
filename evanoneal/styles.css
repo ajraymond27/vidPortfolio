@@ -30,7 +30,6 @@ h2 {
 
 h4 {
   font-size: 16pt;
-  text-decoration: underline;
   color: var(--shadow);
 
 }
@@ -62,12 +61,12 @@ h4 {
  
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: var(--shadow); 
+  background: var(--base1); 
   border-radius: 5px;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: var(--shadow); 
+  background: var(--base3); 
 }
 

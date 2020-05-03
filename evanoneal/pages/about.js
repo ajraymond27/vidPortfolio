@@ -6,6 +6,8 @@ const bio ={
   backgroundColor: 'var(--base1)',
   color: 'var(--white)',
   padding: 20,
+  textAlign: 'center',
+  fontSize: '24pt',
 }
 
 export default function About () {
@@ -13,10 +15,8 @@ export default function About () {
   <>
   <Header />
   <div style={bio}>
-    <h1 style={{color: 'var(--white'}}>About Me</h1>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+    <p>"To be the eyes, the ears, and consciousness of the creator of the universe. You fool!"</p>
+    <p> - R.A.P. Ferreira</p>
   </div>
   <div className="page"> 
 

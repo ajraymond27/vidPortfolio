@@ -1,6 +1,6 @@
 const latest = [
     {
-        category: 'Latest',
+        category: '',
         clients: [
             {
             client: '',

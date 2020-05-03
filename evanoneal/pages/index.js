@@ -2,6 +2,11 @@ import React from 'react';
 import { useRouter } from 'next/router';
 import ReactPlayer from 'react-player';
 
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faFilm } from '@fortawesome/free-solid-svg-icons'
+import { faRecordVinyl } from '@fortawesome/free-solid-svg-icons'
+import { faTv } from '@fortawesome/free-solid-svg-icons'
+
 import latest from '../data/latest';
 import Header from '../components/Header';
 import VidScroller from '../components/VidScroller';
@@ -31,8 +36,16 @@ const button ={
 }
 
 const evan ={
-  width: '20%',
-  margin: 10,
+  width: '100%',
+  borderTop: 'solid 1px var(--shadow)',
+  borderBottom: 'solid 1px var(--shadow)',
+  padding: '10px 0px 10px 0px',
+  marginTop: 10,
+}
+
+const icon ={
+  fontSize: '72pt',
+  color: 'var(--base1)',
 }
 
 export default class Home extends React.Component {
@@ -55,20 +68,99 @@ export default class Home extends React.Component {
           {this.state.latest.map((video) => (
             <VidScroller vids={video} />
           ))}
-          <Link href="/work"><button style={button}>View All Work --> </button></Link>
 
-          {/* <h1>Evan Oneal</h1>
-          <div>
-            <img src='/evan.jpg' style={evan} />
-            <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</span>
+          <div style = {evan}>
+            <h1>Evan Oneal</h1>
+            <p>Inspired by Person1, Person2, Person3, I create impactful stories through visual excellence.</p>
+            <div className="service">
+              <FontAwesomeIcon icon={faFilm} style={icon} />
+              <h4>Short Films</h4>
+              <p>Take your vision to the big screen</p>
+            </div>
+            <div className="service">
+              <FontAwesomeIcon icon={faRecordVinyl  } style={icon}/>
+              <h4>Music Videos</h4>
+              <p>Elevate your your music</p>
+            </div>
+            <div className="service">
+              <FontAwesomeIcon icon={faTv} style={icon}/>
+              <h4>Commericals</h4>
+              <p>Get your name out</p>
+            </div>  
+            <br/>
+
+            <Link href="/work"><button style={button}>View All Work --> </button></Link>
           </div>
-          <img src='https://via.placeholder.com/50x50'/>
-          <img src='https://via.placeholder.com/50x50'/>
-          <img src='https://via.placeholder.com/50x50'/><br/>
-          <Link href="/about"><button style={button}>About Evan Oneal --> </button></Link> */}
-
         </div>
         <Footer />
+
+        <style jsx>{`
+        /* desktop */
+        @media (min-device-width:1224px) {
+          .service {
+            width: 33%;
+            height: auto;
+            text-align: center;
+            float: left;
+          }
+        }
+        
+        /* large desktop screen */
+        @media (min-device-width:1824px) {
+          .service {
+            width: 30vw;
+            height: auto;
+          }
+        
+        }
+        
+        /* Small desktop screen */
+        @media (max-width:1224px) {
+          .service {
+            width: 30vw;
+            height: auto;
+          }
+        
+        }
+        
+        /* Tablet Device */
+        @media (max-device-width:1224px) {
+        @media (orientation: portrait) {
+          .service {
+            width: 30vw;
+            height: auto;
+          }
+        
+        }
+        @media (orientation: landscape) {
+          .service {
+            width: 30vw;
+            height: auto;
+          }
+        
+        }
+        }
+        
+        /* Mobile */
+        @media (max-device-width:850px) {
+        @media (orientation: portrait) {
+          .service {
+            width: 30vw;
+            height: auto;
+          }
+        
+        }
+        @media (orientation: landscape) {
+          .service {
+            width: 30vw;
+            height: auto;
+          }
+        
+        }
+        }
+
+      `}</style>
+
       </>
     )
   }
@@ -99,3 +191,4 @@ const Link = ({ children, href }) => {
     
   )
 }
+
