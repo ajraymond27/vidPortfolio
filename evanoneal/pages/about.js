@@ -1,5 +1,9 @@
 import Header from '../components/Header';
 import Footer from '../components/Footer';
+import Experience from '../components/Experience';
+import Card from 'react-bootstrap/Card';
+import CardDeck from 'react-bootstrap/CardDeck';
+
 
 const bio ={
   width: '100%',
@@ -20,43 +24,21 @@ export default function About () {
   <div className="page"> 
 
     <h1>Education</h1>
-    <span style={{fontWeight: 'bold'}}>Indiana University, College of Arts and Sciences, Bloomington, IN</span> 
-    <p>Bachelor of Arts in Media: Cinema and Media Arts - Studies and Production</p>   <p></p>
+      <Card >
+        <Card.Body>
+        <Card.Title>Indiana University, College of Arts and Sciences, Bloomington, IN</Card.Title>
+        <Card.Subtitle className="mb-2 text-muted">Bachelor of Arts in Media: Cinema and Media Arts - Studies and Production</Card.Subtitle>
+        <Card.Subtitle className="mb-2 text-muted">May 2020</Card.Subtitle>
+        </Card.Body>
+      </Card>
 
+    <h1>Experience</h1>
+    <CardDeck >
+      <Experience />
+    </CardDeck>
+ 
 
-    <h1>Producer</h1>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-
-    <h1>Director</h1>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-   
-    <h1>Editor</h1>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-
-    <h1>Credits</h1>
-    <table >
-      <tr>
-        <th>Video</th>
-        <th>Link</th> 
-        <th>Role</th>
-      </tr>
-      <tr>
-        <td>Video 1</td>
-        <td>Link</td>
-        <td>Producer</td>
-      </tr>
-      <tr>
-        <td>Video2</td>
-        <td>Link</td>
-        <td>Director</td>
-      </tr>
-      <tr>
-        <td>Video3</td>
-        <td>Link</td>
-        <td>Editor</td>
-      </tr>
-    </table>
-  </div>
+    </div>
   <Footer />
   </>
   )
