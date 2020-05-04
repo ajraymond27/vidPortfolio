@@ -7,7 +7,7 @@ const bio ={
   color: 'var(--white)',
   padding: 20,
   textAlign: 'center',
-  fontSize: '24pt',
+  fontSize: '20pt',
 }
 
 export default function About () {
@@ -15,13 +15,12 @@ export default function About () {
   <>
   <Header />
   <div style={bio}>
-    <p>"To be the eyes, the ears, and consciousness of the creator of the universe. You fool!"</p>
-    <p> - R.A.P. Ferreira</p>
+    <p>Adobe Creative Suite  |  AVID Media Composer  |  DaVinci Resolve  |  On-Set Equipment</p>
   </div>
   <div className="page"> 
 
     <h1>Education</h1>
-    <span>Indiana University, College of Arts and Sciences,</span>  <span>Bloomington, IN</span>
+    <span style={{fontWeight: 'bold'}}>Indiana University, College of Arts and Sciences, Bloomington, IN</span> 
     <p>Bachelor of Arts in Media: Cinema and Media Arts - Studies and Production</p>   <p></p>
 
 
