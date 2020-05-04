@@ -22,7 +22,7 @@ export default class VidScroller extends React.Component {
                         .grid-container {
                             display: grid;
                             grid-gap: 10px;
-                            grid-template-columns: repeat(100, 40%) 5px; 
+                            grid-template-columns: repeat(100, 45%) 5px; 
                             grid-template-rows: minmax(150px, 1fr);
                             overflow-x: scroll;
                             padding-bottom: 10px;
@@ -37,6 +37,7 @@ export default class VidScroller extends React.Component {
                             padding: 10px 0;
                             font-size: 30px;
                         }    
+                    }
 
                     /* large desktop screen */
                     @media (min-device-width:1824px) {

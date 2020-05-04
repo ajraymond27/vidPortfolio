@@ -20,17 +20,19 @@ export default function About () {
   </div>
   <div className="page"> 
 
+    <h1>Education</h1>
+    <span>Indiana University, College of Arts and Sciences,</span>  <span>Bloomington, IN</span>
+    <p>Bachelor of Arts in Media: Cinema and Media Arts - Studies and Production</p>   <p></p>
+
+
     <h1>Producer</h1>
     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-    <img src='https://via.placeholder.com/400x200'/>
 
     <h1>Director</h1>
     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-    <img src='https://via.placeholder.com/400x200'/>
    
     <h1>Editor</h1>
     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-    <img src='https://via.placeholder.com/400x200'/>
 
     <h1>Credits</h1>
     <table >

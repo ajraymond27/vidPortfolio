@@ -1,6 +1,6 @@
 :root {
   --white: #fff;
-  --highlight: #71ced9;
+  --highlight: #FFF3E0;
   --base1: #bf8d7a;
   --base2: #bf491f;
   --base3: #8c5b49;
@@ -8,7 +8,7 @@
 }
 
 body h1 h2 h3 h4 p span a button {
-    font-family: 'Courier New', Courier, monospace 'Comic Sans Ms';
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   }
 
 body {
@@ -24,7 +24,7 @@ h1 {
 
 h2 {
   font-size: 20pt;
-  color: var(--shadow);
+  color: var(--base1);
   font-weight: bold;
 }
 

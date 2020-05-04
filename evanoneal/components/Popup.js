@@ -13,8 +13,8 @@ function Content(props) {
       aria-labelledby="contained-modal-title-vcenter"
       centered
     >
-      <Modal.Header closeButton style={{border: 'none'}}>
-        <h1>{props.client.client}</h1>
+      <Modal.Header closeButton style={{border: 'none'}} >
+        <h2>{props.client.client}</h2>
       </Modal.Header>
       <Modal.Body >
         {props.client.videos.map((video) => (
@@ -41,10 +41,10 @@ export default function Popup(props) {
   <style jsx>{`
     .coverImg {
       width: 100%;
-      box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.2), 0 3px 5px 0 rgba(0, 0, 0, 0.19);
+      box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.2), 0 3px 5px 0 rgba(0, 0, 0, 0.19);
     }
     .coverImg:hover {
-      transform: scale(1.02);
+      // transform: scale(1.02);
       cursor: pointer;
     }
 
