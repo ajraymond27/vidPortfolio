@@ -44,7 +44,7 @@ export default function Popup(props) {
       box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.2), 0 3px 5px 0 rgba(0, 0, 0, 0.19);
     }
     .coverImg:hover {
-      // transform: scale(1.02);
+      transform: scale(1.02);
       cursor: pointer;
     }
 
