@@ -17,12 +17,12 @@ const bio ={
 export default function About () {
   return (
   <>
+
+  <div className="page"> 
   <Header />
   <div style={bio}>
     <p>Adobe Creative Suite  |  AVID Media Composer  |  DaVinci Resolve  |  On-Set Equipment</p>
   </div>
-  <div className="page"> 
-
     <h1>Education</h1>
       <Card >
         <Card.Body>

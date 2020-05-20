@@ -7,10 +7,13 @@ import { faFilm } from '@fortawesome/free-solid-svg-icons'
 import { faRecordVinyl } from '@fortawesome/free-solid-svg-icons'
 import { faTv } from '@fortawesome/free-solid-svg-icons'
 
-import latest from '../data/latest';
+// import latest from '../data/latest';
 import Header from '../components/Header';
 import VidScroller from '../components/VidScroller';
 import Footer from '../components/Footer';
+
+import videos from '../data/videos';
+
 
 // const reel ={
 //   width: "100%",
@@ -52,42 +55,24 @@ export default class Home extends React.Component {
   constructor(props) {
     super (props);
     this.state = {
-      latest
+      videos
     }
   }
   render() {
     return (
       <>
+        <div className="page"> 
         <Header />
+
         <div className="reel">
           <ReactPlayer style={vid} url='https://www.youtube.com/watch?v=YtCy8ecMBeQ' loop controls width={'100%'} height={'100%'}/>
         </div>
 
-        <div className="page"> 
 
-          {this.state.latest.map((video) => (
+         {this.state.videos.map((video) => (
             <VidScroller vids={video} />
           ))}
 
-          {/* <div style = {evan}>
-            <div className="service">
-              <FontAwesomeIcon icon={faFilm} style={icon} />
-              <h4>Short Films</h4>
-              <p>Take your vision to the big screen</p>
-            </div>
-            <div className="service">
-              <FontAwesomeIcon icon={faRecordVinyl  } style={icon}/>
-              <h4>Music Videos</h4>
-              <p>Elevate your your music</p>
-            </div>
-            <div className="service">
-              <FontAwesomeIcon icon={faTv} style={icon}/>
-              <h4>Commericals</h4>
-              <p>Get your name out</p>
-            </div>  
-            <br/> */}
-
-            <Link href="/work"><button style={button}>View All Work --> </button></Link>
           </div>
         <Footer />
 
@@ -96,6 +81,7 @@ export default class Home extends React.Component {
           @media (min-device-width:1224px) {
             .reel {
               height: 85vh;
+              margin-bottom: 20px;
             }
           }
 
@@ -103,6 +89,8 @@ export default class Home extends React.Component {
           @media (min-device-width:1824px) {
             .reel {
               height: 75vh;
+              margin-bottom: 20px;
+
             }
 
           }
@@ -111,6 +99,7 @@ export default class Home extends React.Component {
           @media (max-width:1224px) {
             .reel {
               height: 90vh;
+              margin-bottom: 20px;
             }
 
           }
@@ -120,12 +109,14 @@ export default class Home extends React.Component {
           @media (orientation: portrait) {
             .reel {
               height: 45vh;
+              margin-bottom: 20px;
             }
 
           }
           @media (orientation: landscape) {
             .reel {
               height: 85vh;
+              margin-bottom: 20px;
             }
 
           }
@@ -135,13 +126,15 @@ export default class Home extends React.Component {
           @media (max-device-width:850px) {
           @media (orientation: portrait) {
             .reel {
-              height: 35vh;
+              height: 35vh
+              margin-bottom: 20px;
             }
 
           }
           @media (orientation: landscape) {
             .reel {
               height: 80vh;
+              margin-bottom: 20px;
             }
 
           }

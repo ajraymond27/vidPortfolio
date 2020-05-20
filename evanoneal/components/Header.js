@@ -4,12 +4,14 @@ import Nav from 'react-bootstrap/Nav'
 
 const navbar ={
   backgroundColor: 'var(--white)',
+  padding: '10px 0px 10px 0px',
 }
 
 const logo = {
   color: 'var(--base1)',
   fontWeight: 'bold',
   fontSize: '24pt',
+  
 }
 
 export default () => (
@@ -20,8 +22,7 @@ export default () => (
       <Navbar.Toggle aria-controls="responsive-navbar-nav" />
       <Navbar.Collapse id="responsive-navbar-nav" className="justify-content-end">
         <Nav>
-          <Link href="/" >Home</Link>
-          <Link href="/work" >Work</Link>
+          <Link href="/" >Videos</Link>
           <Link href="/about" >About</Link>
           <Link href="/contact" >Contact</Link>
         </Nav>
@@ -46,10 +47,15 @@ const Link = ({ children, href }) => {
         {children}
         <style jsx>{`
           a {
-            margin-right: 50px;
+            margin-left: 50px;
             color: var(--base1);
             font-size: 14pt;
             font-weight: bold;
+          }
+          a:hover {
+            text-decoration: none;
+            color: var(--base3);
+            cursor: pointer;
           }
         `}</style>
       </a>

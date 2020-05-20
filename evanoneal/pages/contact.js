@@ -13,8 +13,9 @@ const icon={
 const Contact = () => (
   <>
 
-  <Header />
   <div className="page"> 
+  <Header />
+
   <h1>Contact</h1>
     <Card >
       <Card.Body>

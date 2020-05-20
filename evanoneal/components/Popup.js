@@ -5,6 +5,13 @@ import Video from './Video';
 import Modal from 'react-bootstrap/Modal';
 // import Button from 'react-bootstrap/Button';
 
+const modal = {
+  border: 'none',
+  backgroundColor: '#000',
+  overflow: 'hidden',
+}
+
+
 function Content(props) {
   return (
     <Modal
@@ -12,11 +19,12 @@ function Content(props) {
       size="xl"
       aria-labelledby="contained-modal-title-vcenter"
       centered
+      style={modal}
     >
-      <Modal.Header closeButton style={{border: 'none'}} >
+      <Modal.Header closeButton style={modal} >
         <h2>{props.client.client}</h2>
       </Modal.Header>
-      <Modal.Body >
+      <Modal.Body style={modal}>
         {props.client.videos.map((video) => (
           <Video video={video} />
         ))}

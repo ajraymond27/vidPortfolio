@@ -15,7 +15,7 @@ export default class Video extends Component {
   render () {
     return (
       <>
-        <h4>{this.props.video.title}</h4>
+        <h4 style={{color:'var(--highlight)'}}>{this.props.video.title}</h4>
         <div className="reel">
           <ReactPlayer style={vid} url={this.props.video.youtube} loop controls width={'100%'} height={'100%'}/>
         </div>
