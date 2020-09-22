@@ -18,7 +18,7 @@ function HomePage() {
 
   useEffect(() => {
     async function getVideos() {
-      const allPosts = await fetchEntries()
+      const allVideos = await fetchEntries()
       setVideos([...allVideos])
     }
     getVideos()
@@ -38,10 +38,10 @@ function HomePage() {
         ? videos.map(p => (
             <Video
               name={v.fields.name}
-              coverImage={p.fields.coverImage}
-              url={p.fields.url}
-              type={p.fields.type}
-              client={p.fields.client}
+              coverImage={v.fields.coverImage}
+              url={v.fields.url}
+              type={v.fields.type}
+              client={v.fields.client}
             />
           ))
         : null}
